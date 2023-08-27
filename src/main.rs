@@ -67,7 +67,7 @@ impl Boid {
             self.vel.z *= -1.0;
         }
 
-        let result = self.pos.cmplt(Vec3::splat(boid_state.box_size));
+        let result = self.pos.cmplt(Vec3::ZERO);
         if result.x {
             self.vel.x *= -1.0;
         }
